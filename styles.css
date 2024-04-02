@@ -82,4 +82,34 @@ input {
     border: unset;
     color: #FFFFFF;
     flex: 1;
+    font-size: 0.9em;
 }
+
+.searchButtonsContainer button {
+    padding: 14px;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    background: #303134;
+    color: #e8eaed;
+    font-size: 14px;
+    margin: 8px 4px;
+    padding: 0 16px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.searchButtonsContainer button:hover {
+    box-shadow: 0 1px 3px #1717173d;
+    border: 1px solid #5f6368;
+}
+
+.languageSelection {
+    font-size: 0.9em;
+}
+
+.languageSelection span {
+    color: #569ef0;
+}
+
+
+/* https://www.youtube.com/watch?v=70T2GMDKl6M&ab_channel=Smoljames */
