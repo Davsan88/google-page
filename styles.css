@@ -10,6 +10,9 @@ body {
     color: #e8eaed;
     padding: 14px;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
 header {
@@ -18,10 +21,30 @@ header {
     justify-content: space-between;
 }
 
-nav, section {
+nav, 
+section {
     display: flex;
     align-items: center;
     gap: 14px;
 }
 
-/* 51:27 https://www.youtube.com/watch?v=70T2GMDKl6M&ab_channel=Smoljames */
+.whiteLink {
+    color: #FFFFFF;
+}
+
+.greyLink {
+    color: #bdc1c6;
+}
+
+a {
+    text-decoration: unset;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+}
+
