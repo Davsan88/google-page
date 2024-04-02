@@ -8,7 +8,7 @@
 body {
     background-color: #202124;
     color: #e8eaed;
-    padding: 14px;
+    /* padding: 14px; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -20,6 +20,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 14px;
 }
 
 nav, 
@@ -53,6 +54,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 24px;
+    padding: 0 14px;
 }
 
 .headerText {
@@ -111,5 +113,16 @@ input {
     color: #569ef0;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+}
 
-/* https://www.youtube.com/watch?v=70T2GMDKl6M&ab_channel=Smoljames */
+footer > section {
+    padding: 14px;
+}
+
+footer > section:last-child {
+    padding: 14px;
+    border-top: 1px solid #5f6368;
+}
