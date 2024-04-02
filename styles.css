@@ -39,7 +39,16 @@ section {
     color: #FFFFFF;
 }
 
+.whiteLink a:visited {
+    color: #FFFFFF;
+}
+
+
 .greyLink {
+    color: #bdc1c6;
+}
+
+.greyLink a:visited{
     color: #bdc1c6;
 }
 
@@ -119,14 +128,11 @@ input {
 }
 
 footer {
-    /* margin-top: auto; */
     display: flex;
     flex-direction: column;
     font-size: 0.9em;
     background: #171717;
 }
-
-    
 
 footer > section:first-child {
     padding: 15px 30px;
@@ -135,13 +141,23 @@ footer > section:first-child {
 footer > section:last-child {
     display: flex;
     align-items: center;
-    
+    justify-content: space-around;
     padding: 15px 20px;
-    border-top: 1px solid #3c4043
+    border-top: 1px solid #3c4043;
+    font-size: 1em;
 }
 
 footer a {
-    display: flex;
-    justify-content: space-evenly;
     font-size: 1em;
+    padding: 10px;
+}
+
+footer a:visited {
+    color: #e8eaed;
+}
+
+.footerLink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
