@@ -25,14 +25,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 14px;
+    padding: 5px 20px ;
 }
 
 nav, 
 section {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 20px;
+}
+
+header section img {
+    max-width: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(160, 10, 160, 0.842);
 }
 
 .whiteLink {
@@ -72,7 +78,7 @@ main {
 }
 
 .headerText {
-    font-size: 4em;
+    font-size: 5.5em;
 }
 
 .searchBar {
@@ -91,6 +97,20 @@ main {
     background: #303134;
     box-shadow: 0 1px 6px 0 #171717;
 }
+
+.iconButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.iconButton {
+    background: transparent;
+    border: none;
+    color: #e8eaed;
+    font-size: 1.2em;
+    cursor: pointer;
+}   
 
 input {
     background: transparent;
@@ -140,6 +160,7 @@ footer > section:first-child {
 
 footer > section:last-child {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     padding: 15px 20px;
@@ -160,4 +181,10 @@ footer a:visited {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+@media (min-width: 540px) {
+    footer>section:last-child {
+        flex-direction: row;
+    }
 }
